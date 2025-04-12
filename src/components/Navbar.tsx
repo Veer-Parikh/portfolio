@@ -3,6 +3,7 @@
 import { useState } from "react";
 // import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { ModeToggle } from "./ToggleButton";
 
 const navItems = [
   { name: "Home", link: "#home" },
@@ -34,6 +35,7 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
+          <ModeToggle />
         </nav>
 
         {/* Mobile Nav Toggle */}

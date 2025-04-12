@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FloatingNav } from "./components/ui/floating-navbar";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 import { IconHome, IconTools, IconFolders, IconTrophy, IconBriefcase, IconMessage } from "@tabler/icons-react";
-import Spline from "./components/Spline";
-import Navbar from "./components/Navbar";
-import { TimelineDemo } from "./components/Timeline";
+import SplineComponent from "@/components/Spline";
+import Navbar from "@/components/Navbar";
+import { TimelineDemo } from "@/components/Timeline";
+import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 // import { HeroSection } from "./components/HeroSection";
 
 export default function Page() {
@@ -54,12 +55,12 @@ export default function Page() {
       <FloatingNav navItems={navItems} />
       <section id="home" className="relative h-screen w-full">
         <Navbar />
-        <Spline />
+        <SplineComponent />
       </section>
 
       {/* Other Sections */}
       <section id="skills" className="h-screen flex items-center justify-center bg-gray-100 dark:bg-neutral-900 text-4xl font-bold text-center">
-        Skills Section
+        {/* <ThreeDMarquee /> */}
       </section>
 
       <section id="projects" className="h-screen flex items-center justify-center bg-white dark:bg-neutral-800 text-4xl font-bold text-center">
